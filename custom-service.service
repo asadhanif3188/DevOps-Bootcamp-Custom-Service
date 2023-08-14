@@ -1,0 +1,9 @@
+[Unit]
+Description=Our cutom service 
+[Service] 
+ExecStart=/bin/usr/custom-service.sh
+User=asad
+Restart=on-failure
+RestartSec=10
+[Install]
+WantedBy=graphical.target
